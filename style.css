@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    display: block;
+}
+main{
+    width: 33.3%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+}
+.content{
+  display: flex;
+}
+.top-content{
+    background-color: hsl(31, 77%, 52%);
+    padding: 2em;
+    width: 33.3%;
+  
+}
+.top-content h3{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    /* font-family: 'Lexend Deca', sans-serif; */
+    padding-bottom: 10px;
+
+}
+.top-content .p-top{
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+}
+.middle-content{
+    background-color: hsl(184, 100%, 22%);
+    padding: 2em;
+    width: 33.3%;
+   
+}
+.middle-content h4{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    padding-bottom: 15px;
+    display: flex;
+}
+.middle-content .p-middle{
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.bottom-content{
+    background-color: hsl(179, 100%, 13%);
+    padding: 2em;
+    width: 33.3%;
+    padding-bottom: 15px;
+   
+    
+}   
+.bottom-content h5{
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+    padding-bottom: 10px;
+}
+.bottom-content .p-bottom{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+/*     display: flex; */
+}
+.button {
+  display: inline-block;front 
+  border: none;
+  paddding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+/*   text-align: ; */
+  cursor: pointer;
+  border: none;
+}
+.button a1{
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+ @media  screen and (min-width:375px) {...}
