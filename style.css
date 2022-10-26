@@ -1,102 +1,293 @@
-*{
-    margin: 0%;
-    padding: 0;
-    box-sizing: border-box;
+ html, body {
+  height: 100%;
+  width: 100%;
+}
+ 
+ body{
+  background: #b7bfe1;
+  color: red;
+  background-attachment: scroll;
+}
+h1{
+  color: rgb(167, 42, 42);
+  capacity: 0.3 
 }
 body{
-    background-color: aliceblue;
-    display: block;
+  margin: 0;
+  padding: 0;
+  background: url(https://media.istockphoto.com/photos/businessman-using-tablet-and-set-up-network-connection-with-shield-picture-id914788014?k=20&m=914788014&s=612x612&w=0&h=-vnDL6ow2ci--qRxBHnqcPUKcNO6kibXfdTYXYF7g0U=);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
 }
-main{
-    width: 33.3%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: row;
-}
-.content{
-  display: flex;
-}
-.top-content{
-    background-color: hsl(31, 77%, 52%);
-    padding: 2em;
-    width: 33.3%;
+/* div-2{
+    color: brown;
+} */
+.loginbox{
+  width: 320px;  
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
   
 }
-.top-content h3{
-    color: white;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Big Shoulders Display', cursive;
-    /* font-family: 'Lexend Deca', sans-serif; */
-    padding-bottom: 10px;
-
+.avater{
+  width: 100px;
+  height: 100px;
+  border-radius: 50% ;
+  position: absolute;
+  top: -50px;
+  left: calc(50% -50px);
+  
 }
-.top-content .p-top{
-    font-weight: 400;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    color: hsla(0, 0%, 100%, 0.75);
-    display: flex;
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+  
 }
-.middle-content{
-    background-color: hsl(184, 100%, 22%);
-    padding: 2em;
-    width: 33.3%;
-   
+.loginbox input{
+     margin: 0;
+     padding: 0;
+     font-weight: bold;
 }
-.middle-content h4{
-    color: white;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Big Shoulders Display', cursive;
-    padding-bottom: 15px;
-    display: flex;
+.loginbox input{
+      width: 100%;
+      margin-bottom: 10px;
 }
-.middle-content .p-middle{
-    font-weight: 400;
-    font-size: 15px;
-    font-family: 'Lexend Deca', sans-serif;
-    color: hsla(0, 0%, 100%, 0.75);
-}
-.bottom-content{
-    background-color: hsl(179, 100%, 13%);
-    padding: 2em;
-    width: 33.3%;
-    padding-bottom: 15px;
-   
-    
-}   
-.bottom-content h5{
-    color: white;
-    font-weight: 700;
-    font-size: 15px;
-    font-family: 'Big Shoulders Display', cursive;
-    padding-bottom: 10px;
-}
-.bottom-content .p-bottom{
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: hsla(0, 0%, 100%, 0.75);
-/*     display: flex; */
-}
-.button {
-  display: inline-block;front 
+.loginbox input[type="text"], input[type="password"]{
   border: none;
-  paddding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-/*   text-align: ; */
-  cursor: pointer;
-  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
 }
-.button a1{
-  padding: 10px 16px;
+.loginbox input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
   font-size: 18px;
-  border-radius: 6px;
+  border-radius: 20px;
 }
- @media  screen and (min-width:375px) {...}
+.loginbox input[type="submit"]:hover
+{
+  cursor: pointed;
+  background: #ffc107;
+  color: #000;
+}
+.loginbox a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+.loginbox a:hover
+{
+  color: #ffc107;
+}
+.registrationbox {
+  
+  height: auto;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 10px 50px 20px;
+}
+/* .avater{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left:calc(50% - 50px);
+} */
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.registrationbox input{
+  margin: 0;
+  padding: 0;
+  font weight: bold;
+}
+.registrationbox input{
+/*   width: 100%; */
+  margin-bottom: 10px;
+}
+.registrationbox input[type="password"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.registrationbox input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #ffc107;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.registrationbox input[type="reset"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: solid blue;
+  color: rgb(214, 122, 127);
+  font-size: 18px;
+  border-radius: 20px;
+}
+.registrationbox input[type="submit"]:hover
+{
+  cursor: pointed;
+  background: #ffc107;
+  color: #000;
+  
+}
+.registrationbox a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+.registrationbox a:hover
+{
+  color: #ffc1o7;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  padding left: 50px;
+  padding right: 30px;
+  padding top: 50px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul{
+  display: inline-block;
+  list-style: none;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 70px;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+  
+}
+nav ul li button{
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+nav ul li button: hover
+{
+  color: aqua;
+}
+nav ul li a:hover{
+  color: aqua;
+}
+a{
+  text-decoration: none;
+  color: palevioletred;
+  font-size: 28px;
+}
+/* #login-form{
+  display: none;
+} */
+/* ul li ul.dropdown li{
+  display: block;
+}
+ul li ul.dropdown {
+  width: 100%;
+  background: #22438c;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
